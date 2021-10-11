@@ -15,7 +15,7 @@
    height: 40px;
    background-color: none;
    display: grid;
-   grid-template-columns: 100px auto 100px;
+   grid-template-columns: 100px auto repeat(3, 100px);
    align-items: center;
    overflow: visible;
    z-index: 10;
@@ -36,13 +36,7 @@
    background-color: none;
    grid-template-rows: 10% 40% 20% 20% 10%;
    grid-template-columns: 100%;
-   transition: background-color 500ms, height 500ms;
-   transition-timing-function:ease-in-out;
    align-items: center;
-}
-
-.profile.grid_container:hover {
-  background-color: #000000BB;
 }
 
 .top-bar.grid-container:hover {
