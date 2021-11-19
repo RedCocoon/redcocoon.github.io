@@ -7,10 +7,10 @@
     <title>Cocoon's Website!</title>
     <div class="top-bar grid-container">
       <div> </div>
-      <div class="top-bar text home">HOME</div>
-      <div class="top-bar text projects">PROJECTS</div>
-      <div class="top-bar text about">ABOUT</div>
-      <div class="top-bar text contact">CONTACT</div>
+      <div class="top-bar text clickable home">HOME</div>
+      <div class="top-bar text clickable projects">PROJECTS</div>
+      <div class="top-bar text clickable about">ABOUT</div>
+      <div class="top-bar text clickable contact">CONTACT</div>
     </div>
   </head>
 
@@ -18,16 +18,18 @@
     <div class="parallax_wrapper">
       <div class="parallax_group">
           <div class="parallax_layer layer_0">
-            <img src="assets/main_background.png" class="background_image">
+            <img src="assets/main_background.png" class="image full">
 
           </div>
           <div class="main_menu grid_container">
             <div class="empty"></div>
             <div class="profile grid_container">
               <div class="empty"></div>
-              <img src="assets/main_pfp.png" class="profile_image">
-              <img src="assets/buttons/main_about.png" class="button main about">
-              <img src="assets/buttons/main_contact.png" class="button main contactz">
+              <div class="empty" id="profile-image" class="image full">
+                <img src="assets/main_pfp.png" class="image">
+              </div>
+              <img src="assets/buttons/main_about.png" class="image 80 button clickable main">
+              <img src="assets/buttons/main_contact.png" class="image 80 button clickable main">
 
               <div class="empty"></div>
             </div>
