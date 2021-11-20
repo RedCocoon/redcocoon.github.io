@@ -3,15 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/master.css">
     <title>Cocoon's Website!</title>
-    <div class="top-bar grid-container">
-      <div> </div>
-      <div class="top-bar text clickable home">HOME</div>
-      <div class="top-bar text clickable projects">PROJECTS</div>
-      <div class="top-bar text clickable about">ABOUT</div>
-      <div class="top-bar text clickable contact">CONTACT</div>
-    </div>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/include.js"></script>
+    <div w3-include-html="html/top_bar.html"></div>
   </head>
 
   <body>
@@ -28,9 +24,12 @@
               <div class="empty" id="profile-image" class="image full">
                 <img src="assets/main_pfp.png" class="image">
               </div>
-              <img src="assets/buttons/main_about.png" class="image 80 button clickable main">
-              <img src="assets/buttons/main_contact.png" class="image 80 button clickable main">
-
+              <a href = "404.html" target="_self" class="button clickable main">
+                <img src="assets/buttons/main_about.png" class="image 80">
+              </a>
+              <a href = "404.html" target="_self" class="button clickable main">
+                <img src="assets/buttons/main_contact.png" class="image 80">
+              </a>
               <div class="empty"></div>
             </div>
             <div class="empty"></div>
@@ -38,10 +37,10 @@
       </div>
       <div class="parallax_group">
         <div class="parallax_layer layer_1">
-          <img src="assets/bricks_background.png" class="background_image">
+          <img src="assets/bricks_background.png" class="image full">
         </div>
       </div>
     </div>
-
+    <script>includeHTML();</script>
   </body>
 </html>

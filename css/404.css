@@ -1,0 +1,8 @@
+.main.text {
+  color: white;
+  font-size: 24px;
+}
+
+.main.grid_container {
+  grid-template-columns: auto repeat(10%, 4) auto;
+}
