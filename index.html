@@ -6,28 +6,29 @@
     <title>Cocoon's Website!</title>
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/include.js"></script>
-    <div w3-include-html="html/top_bar.html"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/top_bar.js"></script>
+    <div class="top-bar"></div>
   </head>
 
   <body>
     <div class="parallax_wrapper">
       <div class="parallax_group">
           <div class="parallax_layer layer_0">
-            <img src="assets/main_background.png" class="image full">
+            <img src="assets/main_background.png" class="image static full">
 
           </div>
           <div class="main_menu grid_container">
             <div class="empty"></div>
             <div class="profile grid_container">
               <div class="empty"></div>
-              <div class="empty" id="profile-image" class="image full">
-                <img src="assets/main_pfp.png" class="image">
+              <div id="profile-image" class="centered image full">
+                <img src="assets/main_pfp.png" class="centered image">
               </div>
-              <a href = "404.html" target="_self" class="button clickable main">
+              <a href = "./about.html" target="_self" class="centered button clickable main">
                 <img src="assets/buttons/main_about.png" class="image 80">
               </a>
-              <a href = "404.html" target="_self" class="button clickable main">
+              <a href = "./contact.html" target="_self" class="centered button clickable main">
                 <img src="assets/buttons/main_contact.png" class="image 80">
               </a>
               <div class="empty"></div>
@@ -41,6 +42,5 @@
         </div>
       </div>
     </div>
-    <script>includeHTML();</script>
   </body>
 </html>
