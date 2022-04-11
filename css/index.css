@@ -13,22 +13,25 @@
    grid-template-columns: 100%;
 }
 
-#profile-image {
-  left: 0px;
+.sprite_button {
+  /* background-color: red; */
   max-width: 384px;
+  left: 0px;
   height: auto;
   overflow: hidden;
 }
 
-#profile-image .image {
+.sprite_button .image {
   height: auto;
 }
 
-#profile-image:hover .image {
+.sprite_button:hover .image {
   transform: translateX(-384px);
 }
 
-#profile-image:active .image {transform: translateX(-768px)}
+.sprite_button:active .image {
+  transform: translateX(-768px);
+}
 
 .image {
   margin: auto;
@@ -45,6 +48,11 @@
 .static {
   position: fixed;
   z-index: 0;
+}
+
+.bottom_bar {
+  position: fixed;
+  bottom: 50%;
 }
 
 .empty {
