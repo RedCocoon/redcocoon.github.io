@@ -5,6 +5,14 @@
    grid-template-columns: 10% auto 65%;
 }
 
+.bottom_bar.grid_container {
+   width: 100%;
+   display: grid;
+   background-color: none;
+   grid-template-columns: auto auto;
+}
+
+
 .profile.grid_container {
    width: 100%;
    height: 100%;
@@ -19,6 +27,7 @@
   left: 0px;
   height: auto;
   overflow: hidden;
+  filter:drop-shadow(6px 6px 0px #4444778F);
 }
 
 .sprite_button .image {
@@ -52,7 +61,6 @@
 
 .bottom_bar {
   position: fixed;
-  bottom: 50%;
 }
 
 .empty {

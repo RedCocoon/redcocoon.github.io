@@ -30,6 +30,14 @@
   height: 100%;
 }
 
+.full {
+  width: 100%;
+}
+
+.float {
+  float: left;
+}
+
 .image.80 {
   width: 80%;
 }
