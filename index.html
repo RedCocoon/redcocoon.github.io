@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/top_bar.js"></script>
+    <script src="js/scene_loader.js"></script>
     <div class="top-bar"></div>
   </head>
 
@@ -20,26 +20,26 @@
           <div class="main_menu grid_container">
             <div class="empty"></div>
             <div class="profile grid_container">
-              <div class="empty"></div>
               <div class="centered image full sprite_button">
                 <img src="assets/main_pfp.png" class="centered image">
               </div>
+            </div>
+            <div class="profile grid_container">
               <a href = "./about.html" target="_self" class="centered button clickable main">
                 <img src="assets/buttons/main_about.png" class="image 80">
               </a>
               <a href = "./contact.html" target="_self" class="centered button clickable main">
                 <img src="assets/buttons/main_contact.png" class="image 80">
               </a>
-              <div class="empty"></div>
             </div>
             <div class="empty"></div>
           </div>
       </div>
       <div class="parallax_group">
         <div class="parallax_layer layer_1">
-          <div class="full">
-            <img src="assets/backgrounds/stone_background.png" class="image float full">
-              <div class="bottom_bar grid_container float">
+          <div class="full" id="projects">
+            <img src="assets/backgrounds/stone_background.png" class="image static float full">
+              <div class="bottom_bar grid_container flexible_grid_columns float">
                 <div class="bottom_bar_divider grid_container float">
                   <a class="text sprite_button_text" href = "https://github.com/RedCocoon/AsepriteSiphon/" target="_blank" >
                     <div class="centered image sprite_button">
@@ -62,6 +62,14 @@
                       <img src="assets/buttons/discord.png" class="centered image">
                     </div>
                     Discord
+                  </a>
+                </div>
+                <div class="bottom_bar_divider grid_container float">
+                  <a class="text sprite_button_text" href = "./games.html" target="_blank" >
+                    <div class="centered image sprite_button">
+                      <img src="assets/buttons/games.png" class="centered image">
+                    </div>
+                    Mini Games
                   </a>
                 </div>
                 <div class="bottom_bar_divider grid_container float">

@@ -4,6 +4,33 @@
   overflow: visible;
 }
 
+@media only screen and (min-width: 384px) {
+  .flexible_grid_columns {
+     grid-template-columns: auto;
+  }
+  .flexible_grid_rows {
+     grid-template-rows: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flexible_grid_columns {
+     grid-template-columns: auto auto;
+  }
+  .flexible_grid_rows {
+     grid-template-rows: auto;
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  .flexible_grid_columns {
+     grid-template-columns: auto auto auto;
+  }
+  .flexible_grid_rows {
+     grid-template-rows: auto;
+  }
+}
+
 .clickable:hover {
   transform: scale(1.05);
 }
