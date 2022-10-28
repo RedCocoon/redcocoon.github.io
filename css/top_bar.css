@@ -13,7 +13,7 @@
   transition: background-color 500ms, width 500ms, color 500ms;
   margin-right: 15px;
   margin-left: 15px;
-  min-width: 80px;
+  min-width: 100px;
 }
 
 .top-bar.grid-container {
@@ -39,6 +39,11 @@
 .top-bar.grid-container:hover .top-bar.text {
   background-color: #99A;
   color: black;
+}
+
+.top-bar {
+  position: relative;
+  z-index: 999;
 }
 
 @media screen and (max-width: 800px) {
