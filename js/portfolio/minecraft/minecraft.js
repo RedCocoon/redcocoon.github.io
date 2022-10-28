@@ -8,8 +8,9 @@ import HitboxCursor from "./hitbox_cursor.js";
 import * as blocksList from "./blocks_list.js";
 import BlockGrid from "./minecraft_blocks.js";
 import MobGrid from "./minecraft_mobs.js";
+import CanvasGrid from "./minecraft_canvas.js";
 
-var states = [{title:"Blocks"},{title:"Items"},{title:"Mobs"}]
+var states = [{title:"Blocks"},{title:"Items"},{title:"Mobs"},{title:"Canvas"}]
 var currentState = 0
 
 var scene = new THREE.Scene();
@@ -78,6 +79,9 @@ $(document).ready(function() {
 	 			}
 				setState(currentState)
       });
+			$(".title .text").click(function(){
+				setState(currentState)
+      });
    });
 
 function setState(state) {
@@ -98,6 +102,13 @@ function setState(state) {
 			for (let i = 0; i < mobs.length; i++) {
 				sceneObjects.push(mobs[i])
 				scene.add(mobs[i]);
+			}
+	    break;
+		case 3:
+			var canvas = new CanvasGrid();
+			for (let i = 0; i < canvas.length; i++) {
+				sceneObjects.push(canvas[i])
+				scene.add(canvas[i]);
 			}
 	    break;
 	  default:
@@ -176,11 +187,17 @@ function pickObject() {
   if (selectedObject.picked) {
 			selectedObject.drop()
 			// If this is the one that was just selected, reset the origin
+			if (currentState == states.length-1) {
+				return;
+			}
 	   controls.target = new THREE.Vector3( 0, 1, 0 )
   }
   else
   {
     	selectedObject.pick()
+			if (currentState == states.length-1) {
+				return;
+			}
     	controls.target = new THREE.Vector3(selectedObject.position.x, 3, selectedObject.position.z)
   }
 }
