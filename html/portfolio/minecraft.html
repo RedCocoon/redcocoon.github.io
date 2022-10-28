@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>C: Portfolio/Minecraft</title>
+		<link rel="stylesheet" href="../../css/master.css">
+		<style>
+			body { margin: 0px; }
+			.image {
+				position:absolute;
+				z-index: 999;
+				min-width: 64px;
+				margin: 20px;
+				filter:drop-shadow(3px 3px 0px #4444778F);
+			}
+			.title .div {
+				position:absolute;
+				min-width: 200;
+				justify-content: center;
+			}
+			.title .text {
+				position:absolute;
+				margin-left: 180px;
+				margin-top: 24px;
+				font-size: 48px;
+				min-width: 200;
+				filter:drop-shadow(3px 3px 0px #4444778F);
+			}
+			.button_left {
+				cursor: pointer;
+				margin-left: 100px
+			}
+			.button_right {
+				cursor: pointer;
+				margin-left: 360px
+			}
+		</style>
+	</head>
+	<body>
+		<script type="module" src="../../js/portfolio/minecraft/minecraft.js"></script>
+		<div>
+			<a href="../../index.html">
+				<img class="image" alt="Home" src="../../assets/portfolio/buttons1.png"/>
+			</a>
+			<img class="image button_left" src="../../assets/portfolio/buttons2.png"/>
+			<div class="title div">
+				<p class="title text white">Blocks</p>
+			</div>
+			<img class="image button_right" src="../../assets/portfolio/buttons3.png"/>
+		</div>
+	</body>
+</html>

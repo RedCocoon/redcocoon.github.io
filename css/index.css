@@ -1,8 +1,9 @@
 .main_menu.grid_container {
-   background-color: none;
+   background:linear-gradient(0deg, #1b1f21 0%, #2b2b45 35%, #444477A8 100%);
    grid-template-columns: auto;
    align-items: center;
    min-height: 100vh;
+   width: 500px;
 }
 
 .bottom_bar.grid_container {
@@ -17,7 +18,6 @@
    grid-template-rows: auto auto;
 }
 
-
 .profile.grid_container {
    height: 384px;
    background-color: none;
@@ -26,40 +26,13 @@
    align-items: center;
 }
 
-.sprite_button {
-  /* background-color: red; */
-  max-width: 384px;
-  min-width: 384px;
-  left: 0px;
-  height: auto;
-  overflow: hidden;
-  filter:drop-shadow(6px 6px 0px #4444778F);
-}
-
-.sprite_button .image {
-  height: auto;
-}
-
-.sprite_button:hover .image {
-  transform: translateX(-384px);
-}
-
-.sprite_button:active .image {
-  transform: translateX(-768px);
-}
-
-.sprite_button_text {
-  color: white;
-  text-align: center;
-  align-self: center;
-  font-size: 32px;
-  width: auto;
-}
-
-
 .image {
   margin: auto;
 }
+
+/* .about_box {
+  background-color: #4444778F;
+} */
 
 .button.clickable:active {
   padding-top: 10px;

@@ -4,6 +4,38 @@
   overflow: visible;
 }
 
+.sprite_button {
+  /* background-color: red; */
+  max-width: 384px;
+  min-width: 384px;
+  left: 0px;
+  height: auto;
+  overflow: hidden;
+  filter:drop-shadow(6px 6px 0px #4444778F);
+}
+
+.sprite_button .image {
+  height: auto;
+}
+
+.sprite_button:hover .image {
+  transform: translateX(-384px);
+}
+
+.sprite_button:active .image {
+  transform: translateX(-768px);
+}
+
+.sprite_button_text {
+  color: white;
+  text-align: center;
+  align-self: center;
+  font-size: 32px;
+  width: auto;
+  filter:drop-shadow(6px 6px 0px #4444778F);
+}
+
+
 @media only screen and (min-width: 384px) {
   .flexible_grid_columns {
      grid-template-columns: auto;
@@ -51,6 +83,7 @@
   width: 100vw;
   height: 100vh;
 }
+
 
 .image.full {
   width: 100%;
@@ -112,7 +145,7 @@ html {
 
 @font-face {
   font-family: VCR_OSD_MONO;
-  src: url("VCR_OSD_MONO.ttf");
+  src: url("../assets/fonts/VCR_OSD_MONO.ttf");
   font-variant: normal;
 }
 
