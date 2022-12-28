@@ -65,7 +65,6 @@ export const full_blocks = [
 "lime_concrete.png",
 "lime_glazed_ceramic.png",
 "lime_polished_ceramic.png",
-"lime_sand_bricks.png",
 "lime_sheet_metal.png",
 "lime_terracotta_tiles.png",],
 
@@ -134,10 +133,11 @@ export const full_blocks = [
 
 ["cut_limestone_bricks.png",
 "cut_limestone.png",
-"cut_weathered_limestone_bricks.png",
-"cut_weathered_limestone.png",
 "limestone_bricks.png",
 "limestone.png",
+//"lime_sand_bricks.png",
+"cut_weathered_limestone_bricks.png",
+"cut_weathered_limestone.png",
 "weathered_limestone_bricks.png",
 "weathered_limestone.png",],
 
