@@ -1,4 +1,4 @@
-/* three-orbitcontrols addendum */ var THREE = require('three');
+import * as THREE from "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.js";
 /**
  * @author qiao / https://github.com/qiao
  * @author mrdoob / http://mrdoob.com
