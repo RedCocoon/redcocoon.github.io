@@ -1,6 +1,6 @@
 import "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.js";
 import "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
-import "https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.min.js";
+import "../../three/OrbitControls.js";
 import { TWEEN } from 'https://unpkg.com/three@0.139.0/examples/jsm/libs/tween.module.min.js';
 import Cube from "./cube.js";
 import PickHelper from "../../three/pickhelper.js";
