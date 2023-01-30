@@ -1,5 +1,5 @@
 import "https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.js";
-import "https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js?module";
+import "https://cdn.jsdelivr.net/npm/three-orbitcontrols@2.110.3/OrbitControls.min.js";
 import "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js";
 import { TWEEN } from 'https://unpkg.com/three@0.139.0/examples/jsm/libs/tween.module.min.js';
 import Cube from "./cube.js";
