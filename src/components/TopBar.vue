@@ -1,0 +1,77 @@
+<template>
+    <div class="top-bar grid-container">
+        <a href="index.html" target="_self" class="top-bar text clickable"><b>HOME</b></a>
+        <div class="empty"></div>
+        <a href="./index.html#projects" target="_self" class="top-bar text clickable">
+            <b>PROJECTS</b>
+        </a>
+        <a href="./portfolio.html" target="_self" class="top-bar text clickable">
+            <b>PORTFOLIO</b>
+        </a>
+        <a href="./contact.html" target="_self" class="top-bar text clickable">
+            <b>CONTACT</b>
+        </a>
+    </div>
+</template>
+
+<script>
+export default {
+    name: "TopBar",
+};
+</script>
+
+<style scoped>
+.top-bar.text {
+  font-style: normal;
+  font-family: VCR_OSD_MONO;
+  font-size: auto;
+  text-size-adjust: auto;
+  color: white;
+  text-align: center;
+  width: auto;
+  filter: drop-shadow(1px 1px 1px #000000);
+  background-color: black;
+  padding: 4px;
+  border-radius: 16px;
+  transition: background-color 500ms, width 500ms, color 500ms;
+  margin-right: 15px;
+  margin-left: 15px;
+  min-width: 100px;
+}
+
+.top-bar.grid-container {
+   position:fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 50px;
+   background-color: none;
+   display: grid;
+   grid-template-columns: 12.5% auto repeat(3, 12.5%);
+   align-items: center;
+   overflow: visible;
+   z-index: 10;
+   transition: background-color 500ms, height 500ms;
+   transition-timing-function:ease-in-out;
+}
+
+.top-bar.grid-container:hover {
+  background-color: #000000BB;
+}
+
+.top-bar.grid-container:hover .top-bar.text {
+  background-color: #99A;
+  color: black;
+}
+
+.top-bar {
+  position: relative;
+  z-index: 999;
+}
+
+@media screen and (max-width: 800px) {
+  .top-bar {
+     visibility: hidden;
+  }
+}
+</style>
