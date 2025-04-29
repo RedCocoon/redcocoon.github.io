@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lucien144/vue3-parallaxy": "^0.1.2",
     "vue": "^3.5.13"
   },
   "devDependencies": {
