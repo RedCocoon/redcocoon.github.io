@@ -1,8 +1,11 @@
 <template>
-    <div class="image full sprite_button" 
-    :style="`--image-size: ${imageSize}px; --image-offset-1: ${imageSize * -1}px; --image-offset-2: ${imageSize * -2}px; --font-size: ${fontSize}px;`">
-        <img :src="imagePath" class="image" alt="Button Image">
-    </div>
+  <div class="image sprite_button grid" 
+  :style="`--image-size: ${imageSize}px; --image-offset-1: ${imageSize * -1}px; --image-offset-2: ${imageSize * -2}px; --font-size: ${fontSize}px;`">
+    <div :style="{ width: `${imageSize}px` }">
+      <img :src="imagePath" class="image" alt="Button Image">
+    </div>    
+      <p v-if="buttonText != ''" class="text" :style="{ fontSize: `${fontSize}px` }">{{ buttonText }}</p>
+  </div>
 </template>
 
 <script>
@@ -19,7 +22,7 @@ export default {
         },
         buttonText: {
             type: String,
-            required: true
+            default: ''
         },
         fontSize: {
             type: Number,
@@ -30,9 +33,8 @@ export default {
 </script>
 
 <style scoped>
-
-.full {
-  width: 100%;
+p {
+  background-color: rgba(12, 9, 17, 0.432);
 }
 .sprite_button {
   /* background-color: red; */
@@ -42,6 +44,9 @@ export default {
   height: auto;
   overflow: hidden;
   filter:drop-shadow(6px 6px 0px #4444778F);
+
+  grid-template-rows: 0.8fr 0.2fr;
+  gap: 0px;
 }
 
 .sprite_button .image {

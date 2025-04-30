@@ -23,15 +23,14 @@ export default {
 <style scoped>
 .top-bar.text {
   font-style: normal;
-  font-family: VCR_OSD_MONO;
-  font-size: auto;
+  font-family: Bitfantasy;
+  font-size: 150%;
   text-size-adjust: auto;
   color: white;
   text-align: center;
   width: auto;
   filter: drop-shadow(1px 1px 1px #000000);
   background-color: black;
-  padding: 4px;
   border-radius: 16px;
   transition: background-color 500ms, width 500ms, color 500ms;
   margin-right: 15px;

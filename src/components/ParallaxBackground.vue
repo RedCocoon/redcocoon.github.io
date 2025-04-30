@@ -20,36 +20,8 @@ import Parallaxy from '@lucien144/vue3-parallaxy';
 </template>
 
 <style scoped>
-.fill {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
-.items-center {
-    align-items: center;
-}
-.flex {
-    display: flex;
-}
-.justify-start {
-    justify-content: flex-start;
-}
-.justify-center {
-    justify-content: center;
-}
-.relative {
-    position: relative;
-}
-.absolute {
-    position: absolute;
-}
 .z-20 {
     z-index: -1;
-}
-.pixelated {
-  height: auto; /* Maintain aspect ratio */
-  image-rendering: pixelated; /* For pixelated rendering */
-  image-rendering: crisp-edges; /* Alternative for crisp edges */
 }
 ::backdrop {
     background-color: color("61b4c7");

@@ -13,15 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -58,7 +49,91 @@ button:focus-visible {
   padding: 2em;
 }
 
+.clickable:hover {
+  transform: scale(1.05);
+}
+
+.clickable:active {
+  transform: scale(0.95);
+}
+
 #app {
   margin: 0 auto;
   text-align: center;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bitfantasy;
+  scroll-behavior: auto;
+}
+
+@font-face {
+  font-family: Bitfantasy;
+  src: url("./assets/fonts/Bitfantasy.ttf");
+  font-variant: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+ width: 10px;
+ scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #888;
+ border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #777;
+}
+.fill {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.pixelated {
+  height: auto; /* Maintain aspect ratio */
+  image-rendering: pixelated; /* For pixelated rendering */
+  image-rendering: crisp-edges; /* Alternative for crisp edges */
+}
+.full {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.grid{
+    display: grid;
+}
+
+a { text-decoration: none; color:#ddd; }
+a:visited { text-decoration: none; color:#ddd; }
+a:hover { text-decoration: none; color:#fff; }
+a:focus { text-decoration: none; color:#ddd; }
