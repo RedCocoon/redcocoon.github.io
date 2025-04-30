@@ -1,115 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cocoon's Website!</title>
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/scene_loader.js"></script>
-    <div class="top-bar top-bar-loader"></div>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cocoon's Portfolio</title>
   </head>
-
   <body>
-    <div class="parallax_wrapper">
-      <div class="parallax_group">
-          <div class="parallax_layer layer_0">
-            <img src="assets/main_background.png" class="image static full">
-          </div>
-          <div class="main_menu grid_container">
-            <div class="empty"></div>
-            <div class="profile grid_container">
-              <div class="centered image full sprite_button">
-                <img src="assets/main_pfp.png" class="centered image">
-                <p class="centered text sprite_button_text"> Pixel Artist</p>
-              </div>
-            </div>
-            <div class="centered full about_box">
-              <p class="centered text sprite_button_text"> ----------------------</p>
-              <p class="centered text sprite_button_text"> Pixel Artist</p>
-              <p class="centered text sprite_button_text"> ----------------------</p>
-              <p class="centered text sprite_button_text"> Indie Game Developer</p>
-              <p class="centered text sprite_button_text"> ----------------------</p>
-              <p class="centered text sprite_button_text"> Lorem Ipsum Lover</p>
-              <p class="centered text sprite_button_text"> ----------------------</p>
-            </div>
-            <!-- <div class="profile grid_container">
-              <a href = "./html/about.html" target="_self" class="centered button clickable main">
-                <img src="assets/buttons/main_about.png" class="image 80">
-              </a>
-              <a href = "./html/contact.html" target="_self" class="centered button clickable main">
-                <img src="assets/buttons/main_contact.png" class="image 80">
-              </a>
-            </div> -->
-            <div class="empty"></div>
-          </div>
-      </div>
-      <div class="parallax_group">
-        <div class="parallax_layer layer_1">
-          <div class="full" id="projects">
-            <img src="assets/backgrounds/stone_background.png" class="image static float full">
-              <div class="bottom_bar grid_container flexible_grid_columns float">
-                <div class="bottom_bar_divider grid_container float">
-                  <a class="text sprite_button_text" href = "https://github.com/RedCocoon/AsepriteSiphon/" target="_blank" >
-                    <div class="centered image sprite_button">
-                      <img src="assets/buttons/aseprite_plugins.png" class="centered image">
-                    </div>
-                    Aseprite Plugins
-                  </a>
-                </div>
-                <div class="bottom_bar_divider grid_container float">
-                  <a class="text sprite_button_text" href = "https://redcocoon.itch.io/" target="_blank" >
-                    <div class="centered image sprite_button">
-                      <img src="assets/buttons/itch_io.png" class="centered image">
-                    </div>
-                    Itch.io
-                  </a>
-                </div>
-                <div class="bottom_bar_divider grid_container float">
-                  <a class="text sprite_button_text" href = "https://discord.gg/QfwFmqU" target="_blank" >
-                    <div class="centered image sprite_button">
-                      <img src="assets/buttons/discord.png" class="centered image">
-                    </div>
-                    Discord
-                  </a>
-                </div>
-                <div class="bottom_bar_divider grid_container float">
-                  <a class="text sprite_button_text" href = "https://twitter.com/RedCocoon20" target="_blank" >
-                    <div class="centered image sprite_button">
-                      <img src="assets/buttons/twitter.png" class="centered image">
-                    </div>
-                    Twitter
-                  </a>
-                </div>
-                <div class="bottom_bar_divider grid_container float">
-                  <a class="text sprite_button_text" href = "./games.html" target="_blank" >
-                    <div class="centered image sprite_button">
-                      <img src="assets/buttons/games.png" class="centered image">
-                    </div>
-                    Mini Games [WIP!]
-                  </a>
-                </div>
-                <!-- <div class="bottom_bar_divider grid_container float">
-                  <a class="text sprite_button_text" href = "./html/collectible.html" target="_blank" >
-                    <div class="centered image sprite_button">
-                      <img src="assets/buttons/collectible.png" class="centered image">
-                    </div>
-                    Collectibles
-                  </a>
-                </div> -->
-                <div class="bottom_bar_divider grid_container float">
-                  <a class="text sprite_button_text" href = "./store.html" target="_blank" >
-                    <div class="centered image sprite_button">
-                      <img src="assets/buttons/merch.png" class="centered image">
-                    </div>
-                    Merch Store [WIP!]
-                  </a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>

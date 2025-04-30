@@ -1,0 +1,139 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #61b4c7;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+.clickable:hover {
+  transform: scale(1.05);
+}
+
+.clickable:active {
+  transform: scale(0.95);
+}
+
+#app {
+  margin: 0 auto;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bitfantasy;
+  scroll-behavior: auto;
+}
+
+@font-face {
+  font-family: Bitfantasy;
+  src: url("./assets/fonts/Bitfantasy.ttf");
+  font-variant: normal;
+}
+
+/* width */
+::-webkit-scrollbar {
+ width: 10px;
+ scroll-behavior: smooth;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+ background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #888;
+ border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background: #777;
+}
+.fill {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.pixelated {
+  height: auto; /* Maintain aspect ratio */
+  image-rendering: pixelated; /* For pixelated rendering */
+  image-rendering: crisp-edges; /* Alternative for crisp edges */
+}
+.full {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+.grid{
+    display: grid;
+}
+
+a { text-decoration: none; color:#ddd; }
+a:visited { text-decoration: none; color:#ddd; }
+a:hover { text-decoration: none; color:#fff; }
+a:focus { text-decoration: none; color:#ddd; }
